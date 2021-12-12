@@ -1,153 +1,187 @@
-// задания по переменным
-//  let a = 3;
-// console.log(a);
+ //задания по переменным
+ // Создайте переменную a и присвойте ей значение 3. Выведите значение этой
+ //переменной на экран.
+ let a = 3;
+console.log(a);
 
-// let a = 10;
-// let b = 2;
-// console.log(a + b);
+//Создайте переменные a = 10 и b = 2. Выведите на экран их сумму, разность,
+  //  произведение и частное (результат деления).
+let a = 10;
+let b = 2;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
 
-// if(a > b) {
-//     console.log(a - b);
-// } else if (b > a) {
-//     console.log(b - a);
-// } else {
-//     console.log('равны');
-// }
+ //Создайте переменные c = 15 и d = 2. Просуммируйте их, а результат присвойте
+//переменной result. Выведите на экран значение переменной result
+let c = 15;
+let d = 2;
 
-// console.log(a * b);
-// console.log(a / b);
-
-// let c = 15;
-// let d = 2;
-//
-// let result = c + d;
-// console.log(result);
-
-// let a = 10;
-// let b = 2;
-// let c = 5;
-// console.log(a + b + c);
-// let a = 17;
-// let b = 10;
-// let c = a - b;
-// let d = 7;
-// let result = c + d;
-// console.log(result);
+let result = c + d;
+console.log(result);
+// Создайте переменные a=10, b=2 и c=5. Выведите на экран их сумму
+let a = 10;
+let b = 2;
+let c = 5;
+console.log(a + b + c);
+// Создайте переменные a=17 и b=10. Отнимите от a переменную b и результат
+// присвойте переменной c. Затем создайте переменную d, присвойте ей значение 7.
+// Сложите переменные c и d, а результат запишите в переменную result. Выведите на
+ //экран значение переменной result
+let a = 17;
+let b = 10;
+let c = a - b;
+let d = 7;
+let result = c + d;
+console.log(result);
 
 //задания по строкам
+// Создайте переменную text и присвойте ей значение 'Привет, Мир!'.
+//     Выведите значение этой переменной на экран
+let text = "Привет Мир!";
+alert(text);
+ //Создайте переменные text1 = 'Привет, ' и text2 = 'Мир!'. С
+// помощью этих переменных и операции сложения строк выведите
+ //на экран фразу 'Привет, Мир!'.
+let text1 = "Привет,";
+let text2 = " Мир!";
+alert(text1 + text2);
+  //   Создайте переменную text и присвойте ей значение 'Привет, Мир!'.
+//     Выведите слово ‘Мир' используя эту переменную
+let text = 'Привет, Мир!';
+ text.substr(7, 3);
+alert(text);
+еще задачи
+// Напишите скрипт, который считает количество секунд в часе, сутках, неделе, месяце
+// из 30 дней.
+var seconds = 60;
+var secondsInHour = 60 * seconds;
+var secondsInDay = 24 * secondsInHour;
+var secondsInWeek = 7 * secondsInDay;
+var secondsInMonth = 30 * secondsInDay
+console.log(secondsInMonth);
+  //   Переделайте приведенный код так, чтобы в нем использовались операции +=, -=, *=, /
+ //=, ++, --. Количество строк кода при этом не должно измениться! Код для переделки:
+let num = 1;
+num += 12;
+num -= 14;
+num *= 5;
+num /=7;
+num ++;
+num --;
+console.log(num);
+     //Создайте три переменные - час, минуты, секунды. С их помощью выведите текущее
+ //время в формате 'час:минуты:секунды'
+let hour = '9';
+let minutes = '07';
+let seconds = '30';
+console.log(hour +':' + minutes + ':' + seconds);
+// Переделайте этот код так, чтобы в нем использовалась операция +=. Количество строк
+// кода при этом не должно измениться
+let text = 'Я';
+text += ' хочу';
+text += ' знать';
+text += ' JS';
+console.log(text);
+// Даны два числа. Найти их сумму и произведение.
+let a = 6;
+let b = 5;
+// sum = a + b; //сумма
+// pr = a * b; //проищведение
+// console.log(pr);
+ //    Даны два числа. Найдите сумму их квадратов.
+res = a * a + b * b; //сумма квадратов
+console.log(res);
+   //  Даны три числа. Найдите их среднее арифметическое
+let a = 7;
+let b = 3;
+let c = 11;
+avg = (a + b + c) / 3;
+console.log(avg);
+ //Дано натуральное числа. Найдите остатки от деления
+// этих чисел на 3 и на 5.
+for (let i = 1; i < 25; i++){
+    // console.log(i % 3);
+    console.log(i % 5);
+}
+// Дано число. Увеличьте его на 30%, на 120%.
+ let num = 95;
+ let res1 = num * 30 /100 + num;
+ let res2 = num * 120 /100 + num;
+ console.log(res1, res2);
+ Даны три числа x,y и z. Найдите (x+1)−2(z−2x+y)
 
-// let text = "Привет Мир!";
-// alert(text);
-//
-// let text1 = "Привет,";
-// let text2 = " Мир!";
-// alert(text1 + text2);
-//
-// let text3 = text.substr(7, 3);
-// alert(text3);
-//еще задачи
+ 3 > 2 ? 'сдал экзамен' : 'не сдал экзамен’; По этому примеру' +
+     ' реализуй три задачи
+let age = 19;
+(age > 18) ? "Тебе больше 18" : "Тебе меньше 18";
 
-// var seconds = 60;
-// var secondsInHour = 60 * seconds;
-// var secondsInDay = 24 * secondsInHour;
-// var secondsInWeek = 7 * secondsInDay;
-// var secondsInMonth = 30 * secondsInDay
-// console.log(secondsInMonth);
-
-// let num = 1;
-// num += 12;
-// num -= 14;
-// num *= 5;
-// num /=7;
-// num ++;
-// num --;
-// console.log(num);
-
-// let hour = '9';
-// let minutes = '07';
-// let seconds = '30';
-// console.log(hour +':' + minutes + ':' + seconds);
-
-// let text = 'Я';
-// text += ' хочу';
-// text += ' знать';
-// text += ' JS';
-// console.log(text);
-
-// let a = 6;
-// let b = 5;
-// // sum = a + b; //сумма
-// // pr = a * b; //проищведение
-// // console.log(pr);
-//
-// res = a * a + b * b; //сумма квадратов
-// console.log(res);
-
-// let a = 7;
-// let b = 3;
-// let c = 11;
-// avg = (a + b + c) / 3;
-// console.log(avg);
-// for (let i = 1; i < 25; i++){
-//     // console.log(i % 3);
-//     console.log(i % 5);
-// }
-// let age = 19;
-// (age > 18) ? "Тебе больше 18" : "Тебе меньше 18";
-
-// let passport = true;
-// (passport) ? 'Yes' : 'No';
-// (age >= 16) ? 'Yes' : 'No';
+let passport = true;
+(passport) ? 'Yes' : 'No';
+(age >= 16) ? 'Yes' : 'No';
 //немного математики
 
 //задача деление по модулю
-// let n = 2;
-// (n % 2 == 0) ? console.log('Четное') : console.log('Не четное');
+ //определить какое число четное или не четное.
+//     Реализовать через тернарную операцию
+let n = 2;
+(n % 2 == 0) ? console.log('Четное') : console.log('Не четное');
 
-// //задачи по массивам
-// var orders = ["computer: 1000", "printer : 500"];
-// orders.unshift("monitor : 700");
-// orders.push("keyboard : 100");
-// console.log(orders);
+// задачи по массивам
+// Создайте массив orders с несколькими элементами в формате “название товара: цена”. Добавьте в него
+// один элемент в начало и в конец. Выведите все элементы массива на экран
+var orders = ["computer: 1000", "printer : 500"];
+orders.unshift("monitor : 700");
+orders.push("keyboard : 100");
+console.log(orders);
 
-// const array = ['ford', 'bmv', 'kia', 'volvo', 'renault'];
-// array.splice(1, 1);
-// array.splice(2, 1);
-// console.log(array);
+ //Создайте массив с пятью элементами. Удалите второй и четвертый элемент. Выведите все элементы
+ //массива
+const array = ['ford', 'bmv', 'kia', 'volvo', 'renault'];
+array.splice(1, 1);
+array.splice(2, 1);
+console.log(array);
 
-// var week = ["Sunday", "MONDAY", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-// week.forEach(function(day,num, week) {
-//     if (num % 2 == 0) {
-//         // delete week[num];
-//         week.splice(num, 1);
-//     }
-// })
-// console.log(week);
-// var array_num = [8, 5, 10, 6, 1, 75, 2, 0, 4];
-// var bigger = 0;
-// for(var item of array_num){
-//     if(item > bigger){
-//         bigger = item;
-//     }
-// }
-// console.log(bigger);
+// Создайте массив с несколькими элементами. Выведите все четные элементы массива
+var week = ["Sunday", "MONDAY", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+week.forEach(function(day,num, week) {
+    if (num % 2 === 0) {
+        week.splice(num, 1);
+    }
+})
+console.log(week);
 
-// var arr1 = [22, 3 , 5, 100, 19, 55];
-// var arr2 = [80, 77 , 5, 101, 519, 5];
-//
-// arr1.forEach(function(item, index, array){
-//     if(item == arr2[index]){
-//         console.log("элементы "+ index + " равны");
-//     } else if( item > arr2[index]){
-//         console.log("элементы "+ index + " не равны. Элемент с первого массива больше");
-//     } else{
-//         console.log("элементы "+ index + " не равны. Элемент со второго массива больше");
-//     }
-// })
+ //Создайте массив с несколькими числами, используя цикл найдите максимальное число в массиве.
+var array_num = [8, 5, 10, 6, 1, 75, 2, 0, 4];
+var bigger = 0;
+for(var item of array_num){
+    if(item > bigger){
+        bigger = item;
+    }
+}
+console.log(bigger);
 
-// var array = ['Я хочу знать Js', 'Я не хочу знать Js'];
-// for(item of array){
-//     if(array.includes('Я не хочу знать Js')){
-//         array.splice(item, 1);
-//     }
-// }
+  //   Создайте два массива с числами одинаковой длины, сравните элементы одного массива с элементами
+// другого
+var arr1 = [22, 3 , 5, 100, 19, 55];
+var arr2 = [80, 77 , 5, 101, 519, 5];
+
+arr1.forEach(function(item, index, array){
+    if(item == arr2[index]){
+        console.log("элементы "+ index + " равны");
+    } else if( item > arr2[index]){
+        console.log("элементы "+ index + " не равны. Элемент с первого массива больше");
+    } else{
+        console.log("элементы "+ index + " не равны. Элемент со второго массива больше");
+    }
+})
+
+ //Создайте массив со строками ‘Я хочу знать JS’ и ‘Я не хочу знать JS’. Используя поиск по строке удалите
+ //из него элемент ‘Я не хочу знать JS’
+var array = ['Я хочу знать Js', 'Я не хочу знать Js'];
+for(item of array){
+    if(array.includes('Я не хочу знать Js')){
+        array.splice(item, 1);
+    }
+}
